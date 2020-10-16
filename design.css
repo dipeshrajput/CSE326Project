@@ -18,6 +18,11 @@ html{
     background-color: wheat;
 }
 .inp{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top:5px;
+    padding-bottom: 5px;
+    margin: 20px;
     background-image: linear-gradient(to bottom right,whitesmoke,wheat);
     border: 0px;
     border-radius: 5px;
@@ -26,7 +31,6 @@ html{
     margin-top:30px;
 }
 a{
-
     margin-left: 10px;
     color: white;
     border-radius: 7px;
@@ -45,6 +49,8 @@ a{
     margin:10px;
 }
 .tourist-trains{
+    animation: slidein 1s ease-in-out;
+    color: white;
     padding:10px;
     margin-left:90px;
     border-radius: 5px;
@@ -52,6 +58,8 @@ a{
     background-image: linear-gradient(to bottom right, Yellow, orange);
 }
 .international-Packages{
+    animation: slidein 2s ease-in-out;
+    color: white;
     padding:10px;
     margin-left:90px;
     border-radius: 5px;
@@ -59,9 +67,35 @@ a{
     background-image: linear-gradient(to bottom right, pink, red);
 }
 .National-Packages{
+    animation: slidein 3s ease-in-out; 
+    color: white;
     padding:10px;
     margin-left:90px;
     border-radius: 5px;
     float: left;
     background-image: linear-gradient(to bottom right,green, cyan);
+}
+a:hover{
+    padding: 7px;
+    font-size: 25px;
+    background-image: linear-gradient(to bottom right,green, cyan);
+}
+button{
+    margin-left: 10px;
+    color: white;
+    border-radius: 7px;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+    background-image: linear-gradient(to bottom left, pink,rgba(255, 0, 0, 0.459));
+    border: 1px solid white;
+}
+button:hover{
+    padding: 7px;
+    font-size: 25px;
+    background-image: linear-gradient(to bottom right,green, cyan);
+}
+@keyframes slidein{
+    0%{transform:translateX(-100%);}
+    100%{transform:translateX(0%)}
 }
